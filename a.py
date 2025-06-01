@@ -5,7 +5,7 @@ def name_input():
         print("no name in list!")
         return
     print("name list")
-    for i, name in enumerate(names, start=1):
-        print(f"{i}.{name}")
+    for i in range(len(names)):
+        print(f"{i+1}. {names[i]}")
     print(f"name number: {len(names)}")
 name_input()
